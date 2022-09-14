@@ -20,7 +20,7 @@ func main() {
 	}
 	defer client.Close()
 
-	uploaded, err := client.UploadIfNewer("/home/hannes/testfile", "testfile")
+	uploaded, err := client.UploadIfNewer("/home/user/testfile", "testfile")
 	if err != nil {
 		log.Fatalln(err)
 	}
